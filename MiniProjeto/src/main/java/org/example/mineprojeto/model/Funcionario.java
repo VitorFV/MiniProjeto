@@ -29,7 +29,8 @@ public class Funcionario {
     @NotBlank(message = "Email deve ser valido!")
     private String email;
 
-    @NotBlank(message = "Deve ser maior que zero!")
+    @NotNull(message = "Salário é obrigatório!")
+    @Positive(message = "Deve ser maior que zero!")
     private Double salario;
 
     public Funcionario(){}
